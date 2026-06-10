@@ -7,6 +7,9 @@
 // ****
 // *****
 
+for (let i = 0; i < 5; i++) {
+    console.log('*'.repeat(i + 1));
+}
 // Tip: je kunt de .repeat() methode gebruiken om een karakter een n aantal keer te herhalen... Dit heb je nog niet geleerd, maar bekijk hiervoor dit MDN-artikel eens: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/repeat
 // ==========================================
 
@@ -21,6 +24,16 @@
 // klaar!
 // ==========================================
 
+for (let i =0 ; i < 5; i++) {
+    if (i === 4) {
+        console.log('klaar!')
+    }
+    else
+        {
+            console.log('loop...')
+        }
+
+    }
 
 // ==========================================
 // Opdracht 3. Maak een for-loop die automatisch factuurnummers genereert in het formaat INV-0001, INV-0002, enzovoorts. Zorg ervoor dat je begint bij nummer 1 en dat de nummers oplopen. Er zijn in totaal 8 factuurnummers nodig.
@@ -37,6 +50,10 @@
 
 // ==========================================
 
+for (let i =0 ; i < 8; i++) {
+        console.log('INV-000' + (i + 1));
+}
+
 // ==========================================
 // Opdracht 4. Schrijf een for-loop die van 9 tot en met 18 loopt en de uren logt.
 // - Bij 10:00 en 14:00 moet de tekst "Koffiepauze!" toegevoegd worden
@@ -45,17 +62,24 @@
 
 // Verwachte uitkomsten:
 // 9:00
-// 10:00
+// 10:00 Koffiepauze!
 // 11:00
 // 12:00 Lunchpauze!
 // 13:00
-// 14:00
+// 14:00 Koffiepauze!
 // 15:00
 // 16:00
 // 17:00 Bijna klaar...
 // 18:00
 // ==========================================
 
+for (let i = 09 ; i < 19; i++) {
+    if (i === 10) {console.log(( i + ":00") + ' Koffiepauze!');}
+    else if (i === 12) {console.log(( i + ":00") + ' Lunchpauze!');}
+    else if (i === 14) {console.log(( i + ":00") + ' Koffiepauze!');}
+    else if (i === 17) {console.log(( i + ":00") + ' Bijna klaar...');}
+    else console.log( i + ":00");
+}
 
 // ==========================================
 // Opdracht 5. Maak een for-loop die van 0 tot 9 loopt en de getallen 0 tot 9 logt.
@@ -72,7 +96,11 @@
 // >> 8
 // >> 9
 // ==========================================
-
+for (let i = 0 ; i <= 9; i++){
+    if (i >= 3 && i < 6) {console.log('> ' + (i));}
+    else if (i > 5) {console.log('>> ' + (i));}
+    else {console.log(i);}
+}
 
 // ==========================================
 // Opdracht 6 (BONUS). Schrijf een for-loop die van 0 tot 100 loopt en de getallen print.
