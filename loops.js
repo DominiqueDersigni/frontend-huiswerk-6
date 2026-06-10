@@ -96,7 +96,7 @@ for (let i = 09 ; i < 19; i++) {
 // >> 8
 // >> 9
 // ==========================================
-for (let i = 0 ; i < 9; i++){
+for (let i = 0 ; i <= 9; i++){
     if (i >= 3 && i < 6) {console.log('> ' + (i));}
     else if (i > 5) {console.log('>> ' + (i));}
     else {console.log(i);}
